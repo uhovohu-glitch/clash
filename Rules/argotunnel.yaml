@@ -1,0 +1,5 @@
+payload:
+  # ── Cloudflare Tunnel 边缘连接 ──
+  # cloudflared 用 QUIC + 无标准 SNI 连接 region*.v2.argotunnel.com，
+  # 在 fake-ip 模式下必须返回真实 IP，否则 SNI 嗅探失败导致连接被丢弃。
+  - "+.argotunnel.com"
